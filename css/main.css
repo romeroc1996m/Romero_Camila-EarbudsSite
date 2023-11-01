@@ -9,7 +9,7 @@
 #nav button {
   width: 1.25rem;
   height: 1.25rem;
-  background: url(../images/) no-repeat center;
+  background: url(../images/burger.svg) no-repeat center;
   margin-top: 0.9375rem;
   margin-bottom: 1.25rem;
   transition: all 0.5s ease;
@@ -23,7 +23,7 @@
 #burger {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
-  display: block;
+  display: none;
 }
 
 #burger-con.slide-toggle {
@@ -55,5 +55,8 @@
 }
 
 #hero {
+
+  padding: auto;
   margin-bottom: 40px;
+
 }/*# sourceMappingURL=main.css.map */
