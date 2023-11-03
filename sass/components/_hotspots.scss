@@ -1,0 +1,82 @@
+#Hotspots {
+    height: 1003px;
+    background-color: #FFFFFF;
+}
+
+#Hotspot-logo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#Hotspot-img {
+    grid-column: 1/5;
+}
+
+#Hotspot-title {
+    font-family: 'Montserrat', sans-serif;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#Hotspot-price {
+    grid-column: 3/4;
+}
+
+#Hotspot-button {
+    grid-column: 3/5;
+}
+
+.Hotspot-button {
+    --glow-color: rgb(104, 104, 104);
+    --glow-spread-color: rgba(127, 127, 127, 0.781);
+    --enhanced-glow-color: rgb(186, 186, 186);
+    --btn-color: rgb(150, 150, 150);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.Hotspot-button::after{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.Hotspot-button:hover {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.Hotspot-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}

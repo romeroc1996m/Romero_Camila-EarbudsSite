@@ -1,23 +1,24 @@
 #nav {
-    position: sticky;
+    height: 128px;
     top: 0rem;
-    background-color: #fff;
+    background-color: #EFEFEF;
     border-bottom: solid 0.0625rem #c3c3c3;
     z-index: 1;
 }
 
 #nav button{
-    width: 1.25rem;
-    height: 1.25rem;
-    background: url(../images/burger.svg) no-repeat center;
-    margin-top: 0.9375rem;
-    margin-bottom: 1.25rem;
-    transition: all .5s ease;
-    border: 0;
+   width: 70px;
+   height: 70px;
+   background: url(../images/burger.svg) no-repeat center;
+   margin-top: 30px;
+   // margin-left: 20px;
+   transition: all .5s ease;
+   border: 0;
+   align-content: flex-end;
 }
 
 #nav button {
-    transform: rotate(90deg);
+    transform: rotate(180deg);
 }
 
 #burger {
@@ -47,6 +48,61 @@
     margin-right: 0rem;
  }
 
+#logo-header {
+   width: 79px;
+   height: 97px;
+   grid-row: 1/1;
+   margin-top: 20px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+   #nav {
+    height: 119px;
+    top: 0rem;
+    background-color: #EFEFEF;
+    border-bottom: solid 0.0625rem #c3c3c3;
+    z-index: 1;
+}
+   
+   #nav button{
+      width: 70px;
+      height: 70px;
+      background: url(../images/burger.svg) no-repeat center;
+      margin-left: 30px;
+      transition: all .5s ease;
+      border: 0;
+      align-content: flex-end;
+   }
+}
+
+
+@media screen and (min-width: 1200px) {
+   #nav button{
+      width: 100px;
+      height: 100px;
+      background: url(../images/burger.svg) no-repeat center;
+      margin-top: 70px;
+      margin-left: 20px;
+      transition: all .5s ease;
+      border: 0;
+      align-content: flex-end;
+   }
+}
+
+@media screen and (min-width: 1920px) {
+   #nav button{
+      width: 100px;
+      height: 100px;
+      background: url(../images/burger.svg) no-repeat center;
+      margin-top: 70px;
+      margin-left: 20px;
+      transition: all .5s ease;
+      border: 0;
+      align-content: flex-end;
+   }
+}
  #nav {
     border-left: 0.125rem solid #707070;
     padding-left: 1.875rem;
