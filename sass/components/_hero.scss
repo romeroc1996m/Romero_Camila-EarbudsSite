@@ -1,0 +1,93 @@
+#hero {
+    background-color: #EFEFEF;
+    height: 1303px;
+}
+
+#hero-title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #434343;
+    // margin-top: 50%;
+    grid-column: 1/4;
+}
+
+#Hero-img1 {
+    margin-top: 40%;
+    grid-column: 1/5;
+    
+}
+
+#Hero-img2 {
+    grid-column: 1/5;
+    grid-row: 4/4;
+    margin-top: 40%;
+}
+
+#hero-text {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    // margin-top: 30%;
+}
+
+#hero-button {
+    grid-column: 2/4;
+    grid-row: 4/4;
+}
+
+.hero-button {
+    
+    --glow-color: rgb(104, 104, 104);
+    --glow-spread-color: rgba(127, 127, 127, 0.781);
+    --enhanced-glow-color: rgb(186, 186, 186);
+    --btn-color: rgb(150, 150, 150);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.hero-button::after{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.hero-button:hover {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.hero-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
