@@ -96,6 +96,13 @@
     align-content: flex-end;
   }
 }
+#nav {
+  border-left: 0.125rem solid #707070;
+  padding-left: 1.875rem;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
 #hero {
   background-color: #EFEFEF;
   height: 1303px;
