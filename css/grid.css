@@ -205,9 +205,9 @@ img, embed, object, video, picture {
      .grid-con { 
         display: grid; 
         grid-template-columns: repeat(12, minmax(0, 1fr));
-        grid-column-gap: 2.125rem;
-        padding-left: 1.0625rem;
-        padding-right: 1.0625rem;
+        grid-column-gap: 1.9rem;
+        padding-left: 8.75rem;
+        padding-right: 8.75rem;
      }
   
      .xl-col-auto {grid-column: auto;}
