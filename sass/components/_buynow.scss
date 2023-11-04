@@ -84,7 +84,7 @@
 
  @media screen and (min-width: 768px) {
       #BuyNow {
-         height: 1015px;
+         height: 2000px;
       }
    
       #LogoWhite {
@@ -110,9 +110,24 @@
  }
 
  @media screen and (min-width: 1200px) {  
-
+   #BuyNow {
+      height: 2200px;
+   }
    // #LogoBlack {
    // margin-top: 1/3;
    // }
+
+ }
+
+ @media screen and (min-width: 1920px) { 
+
+   #BuyNow {
+      height: 2250px;
+   }
+
+   #LogoBlack {
+      margin-bottom: 30%;
+   }
+
 
  }
