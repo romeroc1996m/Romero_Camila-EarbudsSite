@@ -109,12 +109,12 @@
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
   color: #434343;
-  grid-column: 1/4;
+  grid-column: 2/5;
 }
 
 #Hero-img1 {
   margin-top: 40%;
-  grid-column: 1/6;
+  grid-column: 1/5;
 }
 
 #Hero-img2 {
@@ -126,12 +126,12 @@
   grid-column: 1/5;
   grid-row: 3/4;
   font-family: "Heebo", sans-serif;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 #hero-button {
   grid-column: 2/4;
-  grid-row: 4/4;
+  grid-row: 5/5;
 }
 
 .hero-button {
@@ -188,7 +188,7 @@
 @media screen and (min-width: 768px) {
   #hero {
     background-color: #EFEFEF;
-    height: 900px;
+    height: 1300px;
   }
   #hero-title {
     font-family: "Montserrat", sans-serif;
@@ -348,7 +348,7 @@
 
 @media screen and (min-width: 768px) {
   #Hotspots {
-    height: 1139px;
+    height: 1350px;
     background-color: #FFFFFF;
   }
   #Hotspot-logo {
@@ -368,7 +368,6 @@
   #Hotspot-price {
     grid-column: 9/12;
     grid-row: 3/3;
-    margin-top: 40%;
   }
   #Hotspot-button {
     grid-column: 8/12;
@@ -511,7 +510,7 @@
 
 @media screen and (min-width: 768px) {
   #BuyNow {
-    height: 1015px;
+    height: 2000px;
   }
   #LogoWhite {
     grid-column: 6/12;
@@ -529,5 +528,18 @@
     grid-column: 8/12;
     grid-row: 3/3;
     margin-top: 20%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #BuyNow {
+    height: 2200px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #BuyNow {
+    height: 2250px;
+  }
+  #LogoBlack {
+    margin-bottom: 30%;
   }
 }/*# sourceMappingURL=main.css.map */
