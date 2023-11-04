@@ -13,14 +13,14 @@
 
 #Hero-img1 {
     margin-top: 40%;
-    grid-column: 1/5;
+    grid-column: 1/6;
     
 }
 
 #Hero-img2 {
     grid-column: 1/5;
     grid-row: 4/4;
-    margin-top: 40%;
+    // margin-top: 40%;
 }
 
 #hero-text {
@@ -90,4 +90,43 @@
     box-shadow: 0 0 0.6em .25em var(--glow-color),
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
+}
+
+@media screen and (min-width: 768px) {
+    #hero {
+        background-color: #EFEFEF;
+        height: 900px;
+    }
+    
+    #hero-title{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: #434343;
+        grid-column: 8/12;
+        margin-top: 50%;
+    }
+    
+    #Hero-img1 {
+        margin-top: 20%;
+        grid-column: 2/6;
+    }
+    
+    #Hero-img2 {
+        grid-column: 8/13;
+        grid-row: 2/3;
+        // margin-top: 40%;
+    }
+    
+    #hero-text {
+        grid-column: 2/8;
+        grid-row: 2/3;
+        font-family: 'Heebo', sans-serif;
+        font-size: 20px;
+        // margin-top: 30%;
+    }
+    
+    #hero-button {
+        grid-column: 2/6;
+        grid-row: 3/3;
+    }
 }

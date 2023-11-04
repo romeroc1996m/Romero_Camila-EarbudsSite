@@ -1,0 +1,12 @@
+#scroll {
+    height: 211px;
+    grid-column: 1/6;
+}
+
+@media screen and (min-width: 768px) { 
+    #scroll {
+        height: 900px;
+        grid-column: 1/13;
+        grid-row: 1/3;
+    }
+}

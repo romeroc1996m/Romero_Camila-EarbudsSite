@@ -80,3 +80,40 @@
         0 0 2.5em 2em var(--glow-spread-color),
         inset 0 0 .5em .25em var(--glow-color);
 }
+
+@media screen and (min-width: 768px) {
+    #Hotspots {
+        height: 1139px;
+        background-color: #FFFFFF;
+    }
+
+    #Hotspot-logo {
+        grid-column: 1/7;
+    }
+
+    #Hotspot-img {
+        grid-column: 2/12;
+        grid-row: 2/3;
+    }
+
+    #Hotspot-title{
+        grid-column: 2/6;
+        grid-row: 3/3;
+        align-items: center;
+        font-size: 50px;
+        font-size: 30px;
+    }
+
+    #Hotspot-price {
+        grid-column: 9/12;
+        grid-row: 3/3;
+        margin-top: 40%;
+        
+    }
+
+    #Hotspot-button {
+        grid-column: 8/12;
+        grid-row: 4/4;
+        }
+
+}
