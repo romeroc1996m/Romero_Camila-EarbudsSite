@@ -130,3 +130,34 @@
         grid-row: 3/3;
     }
 }
+
+@media screen and (min-width: 1200px) {
+
+    #hero {
+        height: 1183px;
+    }
+
+    #Hero-img1 {
+        grid-column: 1/8;
+    }
+
+    #hero-title {
+        grid-column: 8/12;
+        font-size: 60px;
+    }
+
+    #hero-text {
+        grid-column: 2/6;
+        grid-row: 2/3;
+        font-size: 30px;
+    }
+
+    #Hero-img2 {
+        grid-column: 8/12;
+    }
+
+    #hero-button {
+        grid-column: 3/6;
+    }
+}
+
