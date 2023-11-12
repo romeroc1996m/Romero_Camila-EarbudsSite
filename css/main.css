@@ -423,7 +423,6 @@ model-viewer {
   max-width: 1200px;
   height: 700px;
   display: grid;
-}
 
 .Hotspot {
   background: #fff;
@@ -554,18 +553,46 @@ model-viewer > #ar-prompt > img {
   animation: circle 4s linear infinite;
 }
 
-#scroll {
-  height: 211px;
-  grid-column: 1/6;
+#outerShell {
+  max-width: 1200px;
+  border: solid 1px #666;
 }
 
-@media screen and (min-width: 768px) {
-  #scroll {
-    height: 900px;
-    grid-column: 1/13;
-    grid-row: 1/3;
-  }
+#imageCon {
+  position: relative;
+  max-width: 1200px;
+  height: 100vh;
 }
+
+.slideImage {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.image-right {
+  background: url(../images/earbud-x-ray.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.image-left {
+  background: url(../images/earbud.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 50%;
+  background-attachment: fixed;
+}
+
+.image-drag {
+  background-color: #666;
+  left: 50%;
+  width: 4px;
+  cursor: pointer;
+}
+
 #BuyNow {
   height: 1050px;
   background: linear-gradient(to right, #F0F1F3 50%, #FFFFFF 50%);
