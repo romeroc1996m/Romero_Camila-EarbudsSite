@@ -120,6 +120,7 @@
 #Hero-img2 {
   grid-column: 1/5;
   grid-row: 4/4;
+  margin-top: 40%;
 }
 
 #hero-text {
@@ -204,6 +205,7 @@
   #Hero-img2 {
     grid-column: 8/13;
     grid-row: 2/3;
+    margin-top: 40%;
   }
   #hero-text {
     grid-column: 2/8;
