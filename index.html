@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <title>CRC Earbuds Site</title>
 </head>
 <body>
         <section id="nav">
-            <header>
-                <nav>
+            <header class="grid-con">
+                <nav class="xl-col-start-11 xl-col-end-13 l-col-start-11 l-col-end-13 m-col-start-11 m-col-end-13 col-start-4 col-end-4">
+                    <button id="button" ></button>
                     <div id="burger">
                         <ul>
                             <li><a href="index.html"></a></li>
@@ -20,100 +23,97 @@
                     </div>
                 </nav>
                 
-                <div>
-                    <img src="" alt="CRC earbuds logo">
+                <div id="logo-header" class="xl-col-start-2 xl-col-end-3 l-col-start-2 l-col-end-3 m-col-start-2 m-col-end-3 col-start-1 col-end-2">
+                    <img src="images/Logo.svg" alt="CRC earbuds logo" >
                 </div>
             </header>
         </section>
 
-        <section id="hero" class="full-width-grid-con">
-            <img
-            sizes="100vw"
-            srcset="
-            images/Hero1_Case_j6yruq_c_scale,w_375.png,
-            images/Hero1_Case_j6yruq_c_scale,w_844.png,
-            images/Hero1_Case_j6yruq_c_scale,w_1075.png,
-            images/Hero1_Case_j6yruq_c_scale,w_1260.png"
-            src="images/Hero1_Case_j6yruq_c_scale,w_1260.png"
-            alt="Earbuds case" id="Hero-img1">
+        <section id="hero" class="grid-con">
+            
+            <img src="images/Hero1.png" id="Hero-img1">
             
             <div id="hero-title">
+                <h2>CRC Earbuds</h2>
+            </div>
+
+            <div id="hero-text">
                 <h3> A new experience has arrived, discover the new CRC earbuds with noise cancellation and ultra charging speed. </h3>
             </div>
 
-            <div>
-                <button id="hero-button">Explore</button>
+            <div id="hero-button">
+                <button class="hero-button">Explore</button>
             </div>
 
-            <div>
-                <img
-                sizes="100vw"
-                srcset="
-                images/Hero2_Earbud_Single_vavniv_c_scale,w_375.png,
-                images/Hero2_Earbud_Single_vavniv_c_scale,w_784.png,
-                images/Hero2_Earbud_Single_vavniv_c_scale,w_1020.png,
-                images/Hero2_Earbud_Single_vavniv_c_scale,w_1215.png"
-                src="images/Hero2_Earbud_Single_vavniv_c_scale,w_1215.png"
-                alt="Earbud" id="Hero-img2">                
-            </div>
+            <img src="images/Hero2.png" alt="Earbud" id="Hero-img2" >
+
         </section>
 
-        <section id="Hotspots" class="full-width-grid-con">
-            <div>
-                <img src="images/Logo.svg" alt="CRC Earbuds Logo">
+        <section id="Hotspots" class="grid-con">
+            
+            <div id="Hotspot-logo">
+                <img src="images/LogoOriginal.svg" alt="CRC Earbuds Logo">
             </div>
 
-            <div>
-                <img sizes="100 vw"
-                srcset="
-                images/Hotspot_ggdyua_c_scale,w_375.png
-                images/Hotspot_ggdyua_c_scale,w_587.png
-                images/Hotspot_ggdyua_c_scale,w_762.png
-                images/Hotspot_ggdyua_c_scale,w_912.png"
-                src="images/Hotspot_ggdyua_c_scale,w_912.png" alt="Hotspot earbud">
-            </div>
-            <div>
+            <div id="Hotspot-title">
                 <h3>Noise Cancelling Earbuds</h3>                
             </div>
-            <div>
+
+            <div id="Hotspot-img">
+                <model-viewer id="model" src="model/earbud.gltf" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1.17" exposure="1" shadow-softness="1" auto-rotate>
+      
+                    <button class="Hotspot" slot="hotspot-1" data-position="0.7431009726511323m 0.4884357951392102m 0.054216565053637714m" data-normal="-0.8251128813757003m 0.525275919740984m 0.2080238955700832m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation" id="hotspot-1"></div>
+                    </button>
+                    <button class="Hotspot" slot="hotspot-2" data-position="0.3646925664280277m 0.280102633218124m -0.23613968145046774m" data-normal="0.04777503601939239m -0.9641082071487351m -0.2611760150584228m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation" id="hotspot-2"></div>
+                    </button>
+                    <button class="Hotspot" slot="hotspot-3" data-position="0.3330769979888164m 0.5683549723070058m -0.10547819711113844m" data-normal="-0.03456469393983125m 0.8253071634347372m -0.5636252016332787m" data-visibility-attribute="visible">
+                        <div class="HotspotAnnotation" id="hotspot-3"></div>
+                    </button>
+                    <button slot="ar-button" id="ar-button">
+                        View in your space
+                    </button>
+                    <div id="ar-prompt">
+                        <img src="ar_hand_prompt.png">
+                    </div>
+                  </model-viewer>  
+            </div>
+            
+            <div id="Hotspot-price">
                 <h2>$300.00</h2>
             </div>
-            <div>
-                <button>Buy Now</button>
+            <div id="Hotspot-button">
+                <button class="Hotspot-button">Buy Now</button>
             </div>
         </section>
 
-        <section id="ScrollTrigger" class="full-width-grid-con">
-            <div id="video"></div>
+        <section class="grid-con">
+            <video id="scroll" controls poster="https://via.placeholder.com/1920x1080/000000/FFFFFF">
+                <source src="images/video.webm" type="video/mp4">
+                <source src="images/video.mp4" type="video/mp4">
+            </video> 
         </section>
 
-        <section id="BuyNow" class="full-width-grid-con">
-            <div>
-                <img src="images/Logo.svg" alt="CRC Earbuds Logo" id="Logo Black">
-            </div>
-            <div>
-                <img
-                sizes="100 vw"
-                srcset="
-                images/BuyNow1_pn3t9x_c_scale,w_375.jpg
-                images/BuyNow1_pn3t9x_c_scale,w_1246.jpg
-                images/BuyNow1_pn3t9x_c_scale,w_1792.jpg
-                images/BuyNow1_pn3t9x_c_scale,w_1920.jpg"
-                src="images/BuyNow1_pn3t9x_c_scale,w_1792.jpg" alt="CRC Earbuds Image">
-            </div>
-            <div>
-                <img src="images/WhiteLogo.svg" alt="CRC Earbuds Logo" id="Logo White">
-            </div>
-            <div>
-                <button>Make them yours -></button>
+        <section id="BuyNow" class="grid-con">
+
+            <img src="images/WhiteLogo.svg" alt="CRC Earbuds Logo" id="LogoWhite">
+
+            <img src="images/BuyNow1.png" alt="CRC Earbuds Image" id="BuyNow-Img">
+                
+            <img src="images/LogoOriginal.svg" alt="CRC Earbuds Logo" id="LogoBlack">
+                    
+            <div id="BuyNowButton">
+                <button class="BuyNowButton">Make them yours</button>
             </div>
         </section>
-    
+
     <!-- Loads <model-viewer> for browsers: -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.2.0/model-viewer.min.js"></script>
 
     <script src="js/Hotspots.js"></script>
+
     <script src="js/main.js"></script> 
 </body>
 </html>

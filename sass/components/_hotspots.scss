@@ -1,0 +1,176 @@
+#Hotspots {
+    height: 1003px;
+    background-color: #FFFFFF;
+}
+
+#Hotspot-logo {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+#Hotspot-img {
+    grid-column: 1/5;
+}
+
+#Hotspot-title {
+    font-family: 'Montserrat', sans-serif;
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#Hotspot-price {
+    grid-column: 3/4;
+}
+
+#Hotspot-button {
+    grid-column: 3/5;
+}
+
+.Hotspot-button {
+    --glow-color: rgb(104, 104, 104);
+    --glow-spread-color: rgba(127, 127, 127, 0.781);
+    --enhanced-glow-color: rgb(186, 186, 186);
+    --btn-color: rgb(150, 150, 150);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.Hotspot-button::after{
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.Hotspot-button:hover {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+}
+
+.Hotspot-button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 .5em .25em var(--glow-color);
+}
+
+@media screen and (min-width: 768px) {
+    #Hotspots {
+        height: 1350px;
+        background-color: #FFFFFF;
+    }
+
+    #Hotspot-logo {
+        grid-column: 1/7;
+    }
+
+    #Hotspot-img {
+        grid-column: 2/12;
+        grid-row: 2/3;
+    }
+
+    #Hotspot-title{
+        grid-column: 2/6;
+        grid-row: 3/3;
+        align-items: center;
+        font-size: 50px;
+        font-size: 30px;
+    }
+
+    #Hotspot-price {
+        grid-column: 9/12;
+        grid-row: 3/3;        
+    }
+
+    #Hotspot-button {
+        grid-column: 8/12;
+        grid-row: 4/4;
+        }
+
+}
+
+@media screen and (min-width: 1200px) { 
+
+    #Hotspots {
+        height: 1231px;
+        background-color: #FFFFFF;
+    }
+
+    #Hotspot-logo {
+        grid-column: 2/5;
+        margin-top: 20%;
+    }
+
+    #Hotspot-img {
+        grid-column: 4/11;
+    }
+
+    #Hotspot-title {
+        grid-column: 2/6;
+        font-size: 52px;
+    }
+
+    #Hotspot-price {
+        align-items: center;
+    }
+
+    #Hotspot-button {
+        grid-column: 9/11;
+    }
+}
+
+@media screen and (min-width: 1920px) { 
+
+   #Hotspots {
+    height: 1700px;
+   }
+
+   #Hotspot-img {
+    grid-column: 4/9;
+    grid-row: 2/2;
+   }
+
+   #Hotspot-logo {
+    grid-column: 2/5;
+    grid-row: 1/2;
+   }
+
+   #Hotspot-title {
+    font-size: 70px;
+   }
+
+   #Hotspot-price {
+    font-size: 40px;
+   }
+
+   #Hotspot-button {
+
+   }
+}
