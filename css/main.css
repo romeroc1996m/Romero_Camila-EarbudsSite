@@ -708,4 +708,16 @@ model-viewer > #ar-prompt > img {
   #LogoBlack {
     margin-bottom: 30%;
   }
+}
+@media screen and (min-width: 768px) {
+  #Scroll {
+    padding: 0px;
+    margin: 0px;
+    grid-column: 1/13;
+  }
+}
+@media screen and (min-width: 1920px) {
+  #explode-view {
+    grid-column: 1/13;
+  }
 }/*# sourceMappingURL=main.css.map */
