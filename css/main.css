@@ -423,6 +423,7 @@ model-viewer {
   max-width: 1200px;
   height: 700px;
   display: grid;
+}
 
 .Hotspot {
   background: #fff;
