@@ -1,0 +1,28 @@
+@media screen and (min-width: 768px) {
+  #Scroll {
+    // width: 768px;
+    padding: 0px;
+    margin: 0px;
+    grid-column: 1/13;
+  }
+  
+  // #explode-view {
+  //   width: 768px;
+  // }
+}
+
+@media screen and (min-width: 1200px) {
+  #explode-view {
+    // width: 1200p;
+  }
+}
+
+
+@media screen and (min-width: 1920px) { 
+#explode-view {
+    // max-width: 100%;
+    // width: 100vw;
+    grid-column: 1/13;
+    // width: 1920px;
+  }
+}
